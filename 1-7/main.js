@@ -1,11 +1,23 @@
+//Taiyakiクラスを作成
+class Taiyaki {
+  constructor(inside){
+    this.inside = inside;
+  }
 
-class Human {
-  //コンストラクタ（yamadaと25という値を受け取るための処理をこれから書いていきます）
-  constructor(name,age){
-    this.name = name;
-    this.age = age;
+//味メソッド（関数）作成
+  taste(){
+    console.log(`中身は${this.inside}です`);
   }
 }
 
-let yamada = new Human('yamada', 25);
-console.log(yamada.name);
+let anko = new Taiyaki('あんこ');
+anko.taste();
+
+let cream = new Taiyaki('クリーム');
+cream.taste();
+
+let cheese = new Taiyaki('チーズ');
+cheese.taste();
+
+
+
