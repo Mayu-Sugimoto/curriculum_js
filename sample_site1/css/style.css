@@ -72,7 +72,6 @@ header img {
 .is-active.hamburger_line-1 {
   transform: rotate(-45deg);
   top: 11px;
-  background-color: white;
 }
 
 .is-active.hamburger_line-2 {
@@ -82,37 +81,57 @@ header img {
 .is-active.hamburger_line-3{
   transform: rotate(45deg);
   top: 11px;
-  background-color: white;
 }
 
 .menu {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1;
-  width: 50vw;
+  width: 300px;
   height: 500vh;
-  list-style: none;
   background-color: black;
+}
+
+.menu-link {
+  list-style: none;
+  margin: 40px 40px;
 }
 
 .menu-item{
   width: 100%;
   height: auto;
-  padding: 3em 1em;
-  text-align: center;
+  padding: 20px 0;
   color: white;
   box-sizing: border-box;
+  border-bottom: 2px solid #fff;
+}
+
+.menu-link:first-child {
+  border-top: 2px solid #fff;
+}
+
+.sns {
+  list-style: none;
+  margin: 40px 40px;
+}
+
+.menu-sns {
+  padding-bottom: 10px;
 }
 
 /* アニメーション前のメニューの状態 */
 
 .menu {
-  transform: translateX(100vw);
+  transform: translateX(-100vw);
   transition: all .3s linear;
 }
 
 /* アニメーション後のメニューの状態 */
+body.is-active {
+  background-color: black;
+  opacity: 0.5;
+}
 
 .menu.is-active {
   transform: translateX(0);
