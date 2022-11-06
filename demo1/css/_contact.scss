@@ -1,0 +1,151 @@
+/* お申し込み */
+.contact-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.sp-h2 {
+  display: none;
+}
+
+.contact-category {
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contact-category label {
+  margin: auto;
+}
+
+.contact-category input {
+  width: 400px;
+  height: 40px;
+  padding: 0;
+  box-shadow: 3px 3px 6px #D3E3E9 inset;
+}
+
+.apply-button {
+  width: 240px;
+  margin: auto;
+  border: 1px #003D52 solid;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.apply-button a {
+  color: #003D52;
+}
+
+.arrow3{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.arrow3::before,
+.arrow3::after{
+  position: absolute;
+  top: -3px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.arrow3::before {
+  left: 22px;
+  width: 4px;
+  height: 4px;
+  border-top: 2px solid #003D52;
+  border-right: 2px solid #003D52;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+  .contact-box {
+    width: 100%;
+    margin-bottom: 54px;
+  }
+  
+  .contact-category {
+    margin-bottom: 28px;
+  }
+  
+  .contact-category label {
+    margin: auto;
+    width: 40%;
+  }
+  
+  .contact-category input {
+    width: 60%;
+    height: 36px;
+  }
+
+  .apply-button {
+    width: 220px;
+    height: 55px;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 55px;
+  }
+
+  .arrow3::before {
+    left: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-box {
+    margin-bottom: 48px;
+  }
+
+  .pc-h2 {
+    display: none;
+  }
+
+  .sp-h2 {
+    display: block;
+  }
+
+  .contact-category {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-item {
+    width: 100%;
+  }
+  
+  .contact-category {
+    margin-bottom: 24px;
+  }
+  
+  .contact-category label {
+    margin: auto;
+    width: 30%;
+  }
+  
+  .contact-category input {
+    width: 70%;
+    height: 32px;
+  }
+
+  .apply-button {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 50px;
+  }
+
+  .arrow3::before {
+    left: 10px;
+  }
+}

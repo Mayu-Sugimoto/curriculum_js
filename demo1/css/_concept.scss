@@ -1,0 +1,304 @@
+/* コンセプト */
+.concept-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.concept-img {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.concept-img1 {
+  margin-top: 40px;
+}
+
+.concept-text {
+  margin-top: 40px;
+  margin-left: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.concept-main {
+  font-size: 24px;
+  padding-bottom: 42px;
+}
+
+.concept-contents {
+  line-height: 2.0;
+}
+
+
+@media (max-width: 1020px) and (min-width: 700px) {
+  .concept-img1 {
+    margin-top: 36px;
+  }
+  
+  .concept-text {
+    margin-top: 36px;
+    margin-left: 18px;
+    padding: 18px;
+  }
+  
+  .concept-main {
+    font-size: 20px;
+    padding-bottom: 42px;
+  }
+}
+
+@media (max-width: 700px) {
+  .concept-item {
+    display: block;
+  }
+  
+  .concept-img {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;   margin-right: 0px;
+  }
+  
+  .concept-img1 {
+    margin-top: 32px;
+  }
+
+  .concept-img2 {
+    padding-left: 5px;
+  }
+  
+  .concept-text {
+    margin-top: 32px;
+    margin-left: 0px;
+    background-color: #fff;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .concept-main {
+    font-size: 18px;
+    padding-bottom: 32px;
+  }
+  
+  .concept-contents {
+    line-height: 2.0;
+  }
+  
+}
+
+/* 当社の強み */
+.strength {
+  background-color: #D3E3E9;
+}
+
+.strength .back-title {
+  color: #fff ;
+}
+
+.strength-item .reason {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reason-no1 {
+  font-size: 32px;
+}
+
+.strength-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.strength1 {
+  background-image: url(../img/strength1.png);
+  background-size: 120%;
+  width: 27.5%;
+  height: 300px;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.strength2 {
+  background-image: url(../img/strength2.png);
+  background-size: 100%;
+  width: 27.5%;
+  height: 300px;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.strength3 {
+  background-image: url(../img/strength3.png);
+  background-size: 120%;
+  width: 27.5%;
+  height: 300px;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.strength-no {
+  position: absolute;
+  top: -32px;
+  left: -4px;
+  font-size: 112px;
+  font-family: 'Noto Serif JP', sans-serif;
+  color: #fff;
+  opacity: 0.47;
+}
+
+.strenght-title {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin: 100px auto 20px;
+}
+
+.strength-text {
+  color: #fff;
+  margin: 0 36px 30px;
+  text-align: center;
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+  .strength-item .reason {
+    font-size: 20px;
+    margin-bottom: 36px;
+  }
+  
+  .reason-no1 {
+    font-size: 28px;
+  }
+
+  .strength-content {
+    margin-bottom: 54px;
+  }
+  
+  .strength1 {
+    background-image: url(../img/strength1.png);
+    background-size: 140%;
+    width: 30%;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .strength2 {
+    background-image: url(../img/strength2.png);
+    background-size: 140%;
+    width: 30%;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .strength3 {
+    background-image: url(../img/strength3.png);
+    background-size: 140%;
+    width: 30%;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .strength-no {
+    top: -27px;
+    left: -4px;
+    font-size: 96px;
+  }
+  
+  .strenght-title {
+    font-size: 20px;
+    margin: 90px auto 20px;
+  }
+  
+  .strength-text {
+    color: #fff;
+    margin: 0 16px 24px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .strength-item .reason {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .reason-no1 {
+    font-size: 24px;
+  }
+
+  .strength-content {
+    display: block;
+    margin: 32px auto;
+  }
+  
+  .strength1 {
+    background-image: url(../img/strength1.png);
+    background-size: 100%;
+    width: 280px;
+    height: 320px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin: auto;
+  }
+  
+  .strength2 {
+    background-image: url(../img/strength2.png);
+    background-size: 100%;
+    width: 280px;
+    height: 320px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin: 32px auto;
+  }
+  
+  .strength3 {
+    background-image: url(../img/strength3.png);
+    background-size: 100%;
+    width: 280px;
+    height: 320px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin: auto;
+  }
+  
+  .strength-no {
+    position: absolute;
+    top: -32px;
+    left: -4px;
+    font-size: 112px;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: #fff;
+    opacity: 0.47;
+  }
+  
+  .strenght-title {
+    font-size: 24px;
+    margin: 100px 0 20px;
+    position: absolute;
+    width: 280px;
+  }
+  
+  .strength-text {
+    color: #fff;
+    margin: 200px 36px 30px;
+    position: absolute;
+    width: 208px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,287 @@
+/* 共通 */
+body {
+  font-family: 'Noto Sans JP', "Sans-self";
+  color: #003D52;
+  font-size: 16px;
+}
+
+html {
+  scroll-padding-top: 80px; /* 固定ヘッダの高さ分 */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 80px;
+}
+
+@media (max-width: 1020px) and (min-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+  
+  html {
+    scroll-padding-top: 60px; /* 固定ヘッダの高さ分 */
+  }
+
+  main {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+  
+  html {
+    scroll-padding-top: 40px; /* 固定ヘッダの高さ分 */
+  }
+
+  main {
+    margin-top: 40px;
+  }
+}
+
+/* 共通 */
+.container {
+  width: 1020px;
+  margin: auto;
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+
+.contents-box {
+  position: relative;
+}
+
+.contents-box .back-title {
+  padding-top: 20px;
+  font-size: 112px;
+  color: #D3E3E9;
+  font-family: 'Noto Serif JP', sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  margin: 0;
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+  .container {
+    width: auto;
+    margin: auto;
+    padding: 0 5%;
+    margin-top: 56px;
+    padding-bottom: 72px;
+  }
+
+  .contents-box .back-title {
+    padding-top: 18px;
+    font-size: 84px;
+  }
+
+  h2 {
+    font-size: 36px;
+    top: 80px;
+    left: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: auto;
+    margin: auto;
+    padding: 0 5%;
+    margin-top: 48px;
+    padding-bottom: 64px;
+  }
+
+  .contents-box .back-title {
+    padding-top: 16px;
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 24px;
+    top: 64px;
+  }
+}
+
+.more-button a {
+  color: #003D52;
+  margin: auto;
+  width: 240px;
+  height: 60px;
+  line-height: 60px;
+  border: solid 1px #003D52 ;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.more-button a::before {
+  content: "";
+  width: 120%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  right: 0;
+  z-index: -1;
+  background-color: #003D52;
+  transform: translateX(-100%);
+  transition: transform ease .5s;
+}
+
+.more-button a:hover {
+  color: #fff;
+}
+
+.more-button a:hover::before {
+  transform: translateX(10%);
+}
+
+.arrow{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.arrow::before,
+.arrow::after{
+  position: absolute;
+  top: -3px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.arrow::before {
+  left: 60px;
+  width: 4px;
+  height: 4px;
+  border-top: 2px solid #003D52;
+  border-right: 2px solid #003D52;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+  .more-button a {
+    width: 220px;
+    height: 55px;
+    line-height: 55px;
+  }
+
+  .arrow::before {
+    left: 54px;
+  }
+}
+
+@media (max-width: 700px) {
+  .more-button a {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  .arrow::before {
+    left: 44px;
+  }
+}
+
+/* フェードイン */
+.js-fadeUp {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s, transform .8s;
+}
+/* フェードイン(スクロールした後) */
+.js-fadeUp.is-inview {
+opacity: 1;
+transform: translateY(0);
+transition-delay: .3s;
+}
+
+/* フェードイン */
+.js-fadeUp2 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s, transform .8s;
+}
+/* フェードイン(スクロールした後) */
+.js-fadeUp2.is-inview {
+opacity: 1;
+transform: translateY(0);
+transition-delay: .5s;
+}
+
+/* フェードイン */
+.js-fadeUp3 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s, transform .8s;
+}
+/* フェードイン(スクロールした後) */
+.js-fadeUp3.is-inview {
+opacity: 1;
+transform: translateY(0);
+transition-delay: .7s;
+}
+
+/* フェードイン */
+.js-fadeUp4 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .6s, transform .8s;
+}
+/* フェードイン(スクロールした後) */
+.js-fadeUp4.is-inview {
+opacity: 1;
+transform: translateY(0);
+transition-delay: .9s;
+}
+
+/* フェードイン */
+.js-fadeUp5 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s, transform .8s;
+}
+/* フェードイン(スクロールした後) */
+.js-fadeUp5.is-inview {
+opacity: 1;
+transform: translateY(0);
+transition-delay: 1.1s;
+}
+
+/* フェードイン */
+.js-fadeUp6 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s, transform .8s;
+}
+/* フェードイン(スクロールした後) */
+.js-fadeUp6.is-inview {
+opacity: 1;
+transform: translateY(0);
+transition-delay: 1.3s;
+}

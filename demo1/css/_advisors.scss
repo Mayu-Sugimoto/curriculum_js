@@ -1,0 +1,284 @@
+/* キャリアアドバイザー紹介 */
+.advisors {
+  background-color: #D3E3E9;
+}
+
+.advisors-contents{
+  padding: 60px 0 80px;
+}
+
+.advisors .back-title {
+  color: #fff;
+}
+
+.advisors-p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 40px;
+}
+
+.slider {
+  margin: 0 auto 60px;
+  padding: 0;
+}
+
+.slider .advisors-box {
+  width: 230px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.advisors-box img {
+  width: 100%;
+}
+
+.slider .slick-slide {
+  margin:0 20px;
+}
+
+.advisors-category {
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+.advisors-text {
+  padding: 0 10px 20px;
+}
+
+/* 戻る、次へ */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 95%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #003D52;
+  border-right: 2px solid #003D52;
+  height: 8px;
+  width: 8px;
+}
+
+.slick-prev {
+  left: 30%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: 30%;
+  transform: rotate(45deg);
+}
+
+/* ドットナビゲーション */
+.slick-dots {
+  text-align: center;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  padding: 2px;
+  border: #fff;
+}
+
+.slick-dots .slick-active button {
+  background: #003D52
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+  .advisors-contents{
+    padding: 60px 0 80px;
+  }
+  
+  .advisors .back-title {
+    color: #fff;
+  }
+  
+  .advisors-p {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 40px;
+  }
+  
+  .slider {
+    margin: 0 auto 60px;
+    padding: 0;
+  }
+  
+  .slider .advisors-box {
+    width: 230px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .advisors-box img {
+    width: 100%;
+  }
+  
+  .slider .slick-slide {
+    margin:0 16px;
+  }
+  
+  .advisors-category {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  
+  .advisors-text {
+    padding: 0 10px 20px;
+  }
+  
+  /* 戻る、次へ */
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 95%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #003D52;
+    border-right: 2px solid #003D52;
+    height: 8px;
+    width: 8px;
+  }
+  
+  .slick-prev {
+    left: 30%;
+    transform: rotate(-135deg);
+  }
+  
+  .slick-next {
+    right: 30%;
+    transform: rotate(45deg);
+  }
+  
+  /* ドットナビゲーション */
+  .slick-dots {
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    padding: 2px;
+    border: #fff;
+  }
+  
+  .slick-dots .slick-active button {
+    background: #003D52
+  }
+}
+
+@media (max-width: 700px) {
+  .advisors-contents{
+    padding: 56px 0 56px;
+  }
+  
+  .advisors-p {
+    font-size: 18px;
+    margin: 0 auto 36px;
+    width: 90%;
+  }
+  
+  .slider {
+    margin: 0 auto 56px;
+    padding: 0;
+  }
+  
+  .slider .advisors-box {
+    width: 230px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .advisors-box img {
+    width: 100%;
+  }
+  
+  .slider .slick-slide {
+    margin:0 10px;
+  }
+  
+  .advisors-category {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  
+  .advisors-text {
+    padding: 0 10px 20px;
+  }
+  
+  /* 戻る、次へ */
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 95%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #003D52;
+    border-right: 2px solid #003D52;
+    height: 8px;
+    width: 8px;
+  }
+  
+  .slick-prev {
+    left: 16%;
+    transform: rotate(-135deg);
+  }
+  
+  .slick-next {
+    right: 16%;
+    transform: rotate(45deg);
+  }
+  
+  /* ドットナビゲーション */
+  .slick-dots {
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    padding: 2px;
+    border: #fff;
+  }
+  
+  .slick-dots .slick-active button {
+    background: #003D52
+  }
+}

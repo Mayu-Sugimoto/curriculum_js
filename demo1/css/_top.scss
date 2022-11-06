@@ -1,0 +1,173 @@
+/* トップ */
+h1 {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 56px;
+  line-height: 1.5;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  height: 640px;
+}
+
+.top-copy {
+  position: absolute;
+  transform: translateY(120%);
+  left: 80px;
+  text-shadow: 3px 3px 8px #fff;
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .top-copy {
+    transform: translateY(200%);
+    left: 5%;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 360px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .top-copy {
+    left: 0;
+    transform: translateY(0);
+    top: 400px;
+    padding: 10px 20px;
+    background: #fff;
+  }
+}
+
+@media (max-width: 360px){
+  h1 {
+    font-size: 24px;
+  }
+  .top-copy {
+    left: 0;
+    transform: translateY(0);
+    top: 400px;
+    padding: 10px 20px;
+    background: #fff;
+  }
+}
+
+.achievement {
+  position: absolute;
+  left: 80px;
+  bottom: 20px;
+  display: flex;
+}
+
+.achievement-item {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.achievement1 {
+  margin-right: 30px;
+  padding: 30px 37px;
+  background-color: #068CBD;
+}
+
+.achievement-item .no1 {
+  font-size: 32px;
+  color: #E6A548;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.achievement2 {
+  padding: 23px 27px;
+  background-color: #068CBD; 
+}
+
+.achievement2 .private {
+  line-height: 1.7;
+}
+
+.achievement2 .yellow {
+  font-size: 32px;
+  color: #E6A548;
+}
+
+#fade {
+  height: 640px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 26%;
+}
+
+#fade img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 640px;
+  z-index: -1;
+}
+
+#fade-sp {
+  display: none;
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+    .achievement {
+    left: 5%;
+    bottom: 18px;
+  }
+
+  .achievement-item {
+    font-size: 20px;
+  }
+
+  .achievement1 {
+    margin-right: 26px;
+    padding: 26px 32px;
+  }
+
+  .achievement-item .no1 {
+    font-size: 28px;
+    padding-left: 8px;
+  }
+
+  .achievement2 {
+    padding: 20px 24px;
+  }
+
+  .achievement2 .yellow {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .achievement {
+    display: none;
+  }
+
+  #fade {
+    display: none;
+  }
+
+  #fade-sp {
+    display: block;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #fade-sp img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 600px;
+    z-index: -1;
+  }
+}

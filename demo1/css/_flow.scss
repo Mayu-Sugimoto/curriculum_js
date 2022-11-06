@@ -1,0 +1,118 @@
+/* 転職の流れ */
+.flow-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.flow-contents {
+  position: relative;
+  display: inline-block;
+  width: 27.5%;
+  background-color: #D3E3E9;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.flow-contents:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #D3E3E9;
+}
+
+.number {
+  position: absolute;
+  top: -20px;
+  left: -3px;
+  font-size: 72px;
+  font-family: 'Noto Serif JP', sans-serif;
+  opacity: 0.2;
+}
+
+.flow-box {
+  padding-top: 60px;
+}
+
+.flow-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.flow-icon {
+  height: 90px;
+  width: auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.flow-text {
+  text-align: center;
+  padding: 0 40px 20px 30px;
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+  .flow-contents {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .flow-item {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding-right: 0;
+    margin-bottom: 8px;
+  }
+  
+  .flow-contents {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: #D3E3E9;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .flow-contents:before {
+    content: "";
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #D3E3E9;
+  }
+  
+  .number {
+    position: absolute;
+    top: -20px;
+    left: -3px;
+    font-size: 72px;
+    font-family: 'Noto Serif JP', sans-serif;
+    opacity: 0.2;
+  }
+  
+  .flow-box {
+    padding-top: 60px;
+  }
+  
+  .flow-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .flow-icon {
+    height: 90px;
+    width: auto;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
