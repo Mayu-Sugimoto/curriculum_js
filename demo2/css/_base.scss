@@ -1,0 +1,163 @@
+//共通
+
+body {
+  color: #580C01;
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.title {
+  position: relative;
+  display: block;
+}
+
+.title img {
+  height: 78px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+h2 {
+  padding-top: 80px;
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Shippori Mincho', serif;
+  position: relative;
+  z-index: 100;
+}
+
+.more-button {
+  width: 160px;
+  background-color: #580C01;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px #ccc; 
+}
+
+.more-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.more-button span {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 10px;
+  color: #580C01;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.more-button span::before,
+.more-button span::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.more-button span::before {
+  left: 30px;
+  width: 4px;
+  height: 4px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.more-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+  }
+
+  .title img {
+    height: 70px;
+    top: 36px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  h2 {
+    padding-top: 72px;
+    font-size: 28px;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 690px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  .title img {
+    height: 64px;
+    top: 32px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  h2 {
+    padding-top: 64px;
+    font-size: 24px;
+    z-index: 100;
+  }
+}
+
+//フェードアップ
+.fade-up {
+  opacity: 0;
+  transform: translate(0,40px);
+  transition: 1.5s;
+}
+
+.fade-up.is-show {
+  transform: translate(0,0);
+  opacity: 1;
+}

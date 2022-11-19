@@ -1,0 +1,119 @@
+//ニュース
+
+#news {
+  background-image: url(../img/news_dots.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.news-box {
+  width: 480px;
+  margin: 80px auto;
+}
+
+.news-contents {
+  display: flex;
+  justify-content: start;
+  margin-top: 30px;
+}
+
+.date {
+  margin-right: 100px;
+}
+
+.instagram {
+  margin: 80px auto 0;
+  width: 480px;
+  height: 60px;
+  background-color: #f4ec6a;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px #ccc;
+}
+
+.instagram a {
+  color: #580C01;
+  display: flex;
+  justify-content: space-around;
+  line-height: 3;
+}
+
+.instagram div i {
+  line-height: 1.9;
+}
+
+.insta {
+  font-size: 20px;
+}
+
+.instagram:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .news-box {
+    width: 80%;
+    margin: 72px auto;
+  }
+  
+  .news-contents {
+    margin-top: 28px;
+  }
+  
+  .date {
+    margin-right: 100px;
+  }
+  
+  .instagram {
+    margin: 72x auto 0;
+    width: 420px;
+    height: 54px;
+  }
+  
+  .instagram a {
+    line-height: 3.2;
+  }
+  
+  .instagram div i {
+    line-height: 1.8;
+  }
+  
+  .insta {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 690px) {
+  .news-box {
+    width: 80%;
+    margin: 64px auto;
+  }
+  
+  .news-contents {
+    margin-top: 30px;
+  }
+  
+  .date {
+    margin-right: 100px;
+  }
+  
+  .instagram {
+    margin: 64px auto 0;
+    width: 300px;
+    height: 48px;
+  }
+  
+  .instagram a {
+    line-height: 2.8;
+  }
+  
+  .instagram div i {
+    width: 24px;
+    line-height: 1.7;
+  }
+  
+  .insta {
+    font-size: 16px;
+  }
+}

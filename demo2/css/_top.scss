@@ -1,0 +1,84 @@
+//トップ
+
+#top {
+  background-image: url(../img/main_donuts.png);
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 655px;
+  box-shadow: 0 2px 6px #ccc;
+}
+
+.pc-copy {
+  padding: 150px 0 100px 14%;
+  font-size: 72px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.cafe {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 32px;
+  font-weight: 600;
+  width: 368px;
+  text-align: center;
+  background: #fff;
+  padding: 12px 20px;
+  margin-left: 14%;
+}
+
+.sp-top {
+  display: none;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  #top {
+    height: 396px;
+  }
+
+  .pc-copy {
+    padding: 140px 0 40px 10%;
+    font-size: 40px;
+    font-family: 'Shippori Mincho', serif;
+  }
+  
+  .cafe {
+    font-size: 18px;
+    font-weight: 600;
+    width: 200px;
+    padding: 10px 16px;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 690px) {
+  #top {
+    background-image: none;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .pc-top {
+    display: none;
+  }
+
+  .sp-top {
+    display: block;
+  }
+
+  .sp-top-img {
+    margin: auto;
+  }
+
+  .sp-top-img img {
+    width: 100%;
+  }
+
+  .sp-copy {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 600;
+    margin: 24px 0;
+  }
+}
+

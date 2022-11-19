@@ -1,0 +1,93 @@
+//店舗情報
+
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 80px auto;
+}
+
+.map {
+  width: 400px;
+}
+
+.map img {
+  width: 100%;
+}
+
+.info-text {
+  width: 400px;
+  margin-top: 24px;
+}
+
+.info-contents {
+  display: flex;
+  justify-content: start;
+}
+
+.info-left {
+  width: 35%;
+}
+
+.info-right {
+  width: 65%;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .info-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 72px auto;
+  }
+  
+  .map {
+    width: 45%;
+  }
+  
+  .info-text {
+    width: 50%;
+    margin-top: 0;
+  }
+  
+  .info-contents {
+    display: flex;
+    justify-content: start;
+  }
+  
+  .info-left {
+    width: 30%;
+  }
+  
+  .info-right {
+    width: 70%;
+  }
+}
+
+@media (max-width: 690px) {
+  .info-box {
+    display: block;
+    margin: 64px auto;
+  }
+  
+  .map {
+    width: 100%;
+  }
+  
+  .info-text {
+    width: 100%;
+    margin-top: 64px;
+  }
+  
+  .info-contents {
+    display: flex;
+    justify-content: start;
+  }
+  
+  .info-left {
+    width: 35%;
+  }
+  
+  .info-right {
+    width: 65%;
+  }
+}

@@ -1,0 +1,50 @@
+//ごあいさつ
+
+#concept {
+  position: relative;
+}
+
+.concept-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
+  flex-direction: row-reverse;
+}
+
+.concept-img img{
+  width: 370px;
+}
+
+.concept-text {
+  text-align: center;
+  line-height: 2;
+}
+
+.concept-text p {
+  margin: 0;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .concept-box {
+    margin: 72px auto;
+  }
+  .concept-img img{
+    width: 320px;
+  }
+}
+
+@media (max-width: 690px) {
+  .concept-box {
+    display: block;
+    margin: 72px auto 48px;
+  }
+
+  .concept-img img{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .concept-text {
+    margin-top: 48px;
+  }
+}
