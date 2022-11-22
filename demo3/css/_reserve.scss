@@ -1,0 +1,97 @@
+//予約
+
+#reserve {
+  background-color: #FFF7EA;
+}
+
+.reserve-text {
+  text-align: center;
+}
+
+.reserve-button {
+  width: 400px;
+  height: 60px;
+  margin: 60px auto 0;
+  border: solid 1px #38312A;
+  background-color: #fff;
+  text-align: center; 
+}
+
+.reserve-button a {
+  color: #38312A;
+  line-height: 4;
+}
+
+.reserve-button span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #38312A;
+  line-height: 1;
+  position: relative;
+  width: 60px;
+  height: 1px;
+  background-color: #38312A;
+  margin-left: 30px;
+}
+
+.reserve-button span::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  bottom: 5.5px;
+  right: -2px;
+  background-color: #38312A;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .reserve-button {
+    width: 360px;
+    height: 54px;
+    margin: 54px auto 0;
+  }
+
+  .reserve-button a {
+    line-height: 3.5;
+  }
+  
+  .reserve-button span {
+    width: 54px;
+    height: 1px;
+    margin-left: 30px;
+  }
+  
+  .reserve-button span::before {
+    width: 14px;
+    height: 1px;
+    bottom: 5px;
+    right: -2px;
+  }
+}
+
+@media (max-width: 690px)  {
+  .reserve-button {
+    width: 300px;
+    height: 48px;
+    margin: 48px auto 0;
+  }
+
+  .reserve-button a {
+    line-height: 3.5;
+    padding-left: 25%;
+  }
+  
+  .reserve-button span {
+    width: 48px;
+    height: 1px;
+    margin-left: 24px;
+  }
+  
+  .reserve-button span::before {
+    width: 12px;
+    height: 1px;
+    bottom: 4px;
+    right: -2px;
+  }
+}

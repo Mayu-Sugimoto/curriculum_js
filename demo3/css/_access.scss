@@ -1,0 +1,61 @@
+//アクセス
+
+.access-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.map {
+  width: 45%;
+}
+
+.map img {
+  width: 100%;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 12%);
+}
+
+.access-text {
+  width: 50%;
+}
+
+.access-contents {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+
+.access-item {
+  width: 30%;
+}
+
+.access-detail {
+  width: 70%;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .access-contents {
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 690px) {
+  .access-box {
+    display: block;
+  }
+
+  .map {
+    width: 100%;
+  }
+  
+  .access-text {
+    width: 100%;
+    margin-top: 48px;
+  }
+  
+  .access-contents {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 32px;
+  }
+}

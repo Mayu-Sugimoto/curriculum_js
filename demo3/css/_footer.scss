@@ -1,0 +1,89 @@
+//フッター
+
+footer {
+  color: #fff;
+  background-color: #38312A;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  padding: 30px 15px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+}
+
+.footer-nav ul li a:hover {
+  color: #FEE15E;
+}
+
+footer p {
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .footer-nav ul {
+    display: none;
+  }
+
+  footer p {
+    padding-top: 30px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 690px) {
+  .footer-nav ul {
+    display: none;
+  }
+
+  footer p {
+    padding: 24px 0;
+    font-size: 10px;
+  }
+}
+
+//トップに戻るボタン
+#page-top {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  height: 50px;
+  text-decoration: none;
+  transform: rotate(90deg);
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #38312A;
+  padding: 0 0 0 35px;
+  border-top: solid 1px #38312A;
+}
+
+#page-top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 15px;
+  border-top: solid 1px #38312A;
+  transform: rotate(35deg);
+  transform-origin: left top;
+}
+
+.fadeIn_up3 {
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.fadeIn_up3.is-show {
+  opacity: 1;
+}

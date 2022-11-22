@@ -1,0 +1,75 @@
+//メニュー
+
+.menu-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-half {
+  width: 47%;
+}
+
+.menu-list {
+  margin-bottom: 60px;
+}
+
+.menu-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0 10px 10px;
+  border-bottom: solid 1px #E1DBD6;
+}
+
+.menu-contents {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #E1DBD6;
+}
+
+.menu-text {
+  padding: 10px 0 10px 10px;
+  line-height: 1.5;
+}
+
+.menu-price {
+  padding-right: 10px;
+  margin: auto 0;
+}
+
+.menu-half p {
+  text-align: end;
+}
+
+.color {
+  margin-bottom: 0;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .menu-list {
+    margin-bottom: 54px;
+  }
+
+  .menu-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 690px) {
+.menu-box {
+  display: block;
+}
+
+.menu-half {
+  width: 100%;
+}
+
+.menu-list {
+  margin-bottom: 48px;
+}
+
+.menu-title {
+  font-size: 16px;
+  padding: 10px 0 10px 10px;
+}
+}

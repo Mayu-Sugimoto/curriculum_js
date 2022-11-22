@@ -1,0 +1,209 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  color: #38312A;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.box {
+  margin: 60px 0 80px;
+}
+
+.under-line {
+  width: 30px;
+  height: 3px;
+  background-color: #FEE15E;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.more-button {
+  width: 240px;
+  height: 60px;
+  border: solid 1px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  transition: ease 0.2s;
+}
+
+.more-button a {
+  color: #38312A;
+  line-height: 3.6;
+  position: relative;
+  z-index: 3;
+}
+
+.more-button span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #38312A;
+  line-height: 1;
+  position: relative;
+  width: 60px;
+  height: 1px;
+  background-color: #38312A;
+  margin-left: 30px;
+}
+
+.more-button span::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  bottom: 5.5px;
+  right: -2px;
+  background-color: #38312A;
+  transform: rotate(45deg);
+}
+
+.more-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #FEE15E;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform: scale(0,1);
+  transform-origin: right top;
+}
+
+.more-button:hover::before{
+  transform-origin: left top;
+  transform: scale(1,1);
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 72px;
+    padding-bottom: 90px;
+  }
+  
+  .more-button {
+    width: 220px;
+    height: 54px;
+  }
+  
+  .more-button a {
+    color: #38312A;
+    line-height: 3.6;
+  }
+  
+  .more-button span {
+    width: 54px;
+    height: 1px;
+    margin-left: 28px;
+  }
+  
+  .more-button span::before {
+    width: 14px;
+    height: 1px;
+    bottom: 5px;
+    right: -2px;
+  }
+}
+
+@media (max-width: 690px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+  
+  .more-button {
+    width: 200px;
+    height: 48px;
+  }
+  
+  .more-button a {
+    color: #38312A;
+    line-height: 3.6;
+  }
+  
+  .more-button span {
+    width: 50px;
+    height: 0.8px;
+    margin-left: 24px;
+  }
+  
+  .more-button span::before {
+    width: 12px;
+    height: 1px;
+    bottom: 4px;
+    right: -2px;
+  }
+}
+
+//フェードイン
+.fadeIn_up {
+  opacity: 0;
+  transform: translate(0,10%);
+  transition: 2.5s;
+}
+
+.fadeIn_up.is-show {
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.fadeIn_up2 {
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.fadeIn_up2.is-show {
+  opacity: 1;
+}

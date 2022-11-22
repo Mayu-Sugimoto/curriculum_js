@@ -1,0 +1,78 @@
+//コンセプト
+
+.concept-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.concept-img {
+  width: 45%;
+}
+
+.concept-img img {
+  width: 100%;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 28%);
+}
+
+.concept-text {
+  width: 45%;
+  margin-top: 40px;
+}
+
+.main-text {
+  font-size: 24px;
+}
+
+.concept-text p {
+  line-height: 2;
+  margin-top: 30px;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .concept-box {
+    margin: 54px 0 72px;
+  }
+  
+  .concept-text {
+    margin-top: 0px;
+  }
+  
+  .main-text {
+    font-size: 20px;
+  }
+  
+  .concept-text p {
+    line-height: 2;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 690px) {
+  .concept-box {
+    display: block;
+    margin: 48px 0 64px;
+  }
+  
+  .concept-img {
+    width: 100%;
+  }
+  
+  .concept-img img {
+    width: 100%;
+  }
+  
+  .concept-text {
+    width: 100%;
+    margin-top: 48px; 
+  }
+  
+  .main-text {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .concept-text p {
+    line-height: 2;
+    margin-top: 16px;
+  }
+}

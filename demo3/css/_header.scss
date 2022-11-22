@@ -1,0 +1,237 @@
+//ヘッダー
+
+header {
+  width: 100%;
+  height: auto;
+  background-color:rgba(255,255,255,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 28%);
+}
+
+.pc-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 16px auto;
+}
+
+.logo {
+  width: 142px;
+  height: auto;
+}
+
+.pc-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-button {
+  margin: auto 15px;
+}
+
+.nav-button a {
+  color: #38312A;
+}
+
+.nav-button a:hover {
+  color: #FEE15E;
+}
+
+.tel {
+  text-align: center;
+}
+
+.number i {
+  padding-right: 4px;
+}
+
+.sp-header {
+  display: none;
+}
+
+@media (max-width: 990px) and (min-width: 690px) {
+  .pc-header {
+    display: none;
+  }
+
+  .sp-header {
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+  }
+
+  .sp-header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sp-logo {
+    width: 142px;
+    height: auto;
+  }
+
+  .nav-button {
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 32px;
+  }
+
+  .nav-button span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #38312A;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+    border-radius: 4px;
+  }
+
+  .nav-button span:nth-child(1) {
+    top: 0;
+  }
+
+  .nav-button span:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .nav-button span:nth-child(3){
+    bottom: 0;
+  }
+
+  .nav-button.show span:nth-child(1) {
+    transform: translateY(14px) rotate(-45deg);
+  }
+
+  .nav-button.show span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-button.show span:nth-child(3) {
+    transform: translateY(-14px) rotate(45deg);
+  }
+
+  .sp-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s ease;
+    background-color: #fff;
+    width: 30%;
+    transform: translateX(-30%);
+  }
+
+  .sp-nav.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition:  transform 1s ease, opacity .9s ease;
+  }
+
+  .sp-nav .nav-button {
+    margin-top: 30px;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 690px) {
+  .pc-header {
+    display: none;
+  }
+
+  .sp-header {
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+  }
+
+  .sp-header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sp-logo {
+    width: 142px;
+    height: auto;
+  }
+
+  .nav-button {
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 32px;
+  }
+
+  .nav-button span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #38312A;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+    border-radius: 4px;
+  }
+
+  .nav-button span:nth-child(1) {
+    top: 0;
+  }
+
+  .nav-button span:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .nav-button span:nth-child(3){
+    bottom: 0;
+  }
+
+  .nav-button.show span:nth-child(1) {
+    transform: translateY(14px) rotate(-45deg);
+  }
+
+  .nav-button.show span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-button.show span:nth-child(3) {
+    transform: translateY(-14px) rotate(45deg);
+  }
+
+  .sp-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s ease;
+    background-color: #fff;
+    width: 70%;
+    transform: translateX(-70%);
+  }
+
+  .sp-nav.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition:  transform 1s ease, opacity .9s ease;
+  }
+
+  .sp-nav .nav-button {
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+}
